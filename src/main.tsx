@@ -15,7 +15,7 @@ declare global {
 
 window.initPlugin = (id: string) => {
   const root = ReactDOM.createRoot(
-    document.getElementById(id)!
+    document.getElementById(id) as HTMLElement
   );
   root.render(
     <React.StrictMode>
@@ -27,5 +27,5 @@ window.initPlugin = (id: string) => {
 /*ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>*/
-);
+  </React.StrictMode>
+);*/
